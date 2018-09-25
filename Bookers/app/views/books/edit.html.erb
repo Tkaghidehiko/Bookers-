@@ -1,8 +1,11 @@
+<%= notice %>
+
 <h1> 編集画面</h1>
 <%= form_for(@book) do |f| %>
 	<h4> タイトル</h4>
-	<%= f.text_field :title %>
+	<%= f.text_field :title, class: "book_title" %>
 	<h4> 本文</h4>
-	<%= f.text_area :body %>
+	<%= f.text_area :body, class: "book_body" %>
 	<%= f.submit '保存' %>
 <% end %>
+
