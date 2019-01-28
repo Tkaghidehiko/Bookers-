@@ -84,10 +84,22 @@
 
                         <div class="collapse navbar-collapse" id="navbarEexample7">
                           <ul class="nav navbar-nav">
-                            <li><%= link_to "Home", root_path, class: "home" %></li>
-                            <li><%= link_to "About", about_path, class: "about" %></li>
-                            <li><%= link_to "sign up", new_user_registration_path, class: "sign_up" %></li>
-                            <li><%= link_to "login", new_user_session_path, class: "sign_in" %></li>
+                            <li><%= link_to root_path, class: "home" do %>
+                              <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>  Home
+                              <% end %>
+                            </li>
+                            <li><%= link_to about_path, class: "about" do %>
+                              <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>  About
+                              <% end %>
+                            </li>
+                            <li><%= link_to new_user_registration_path, class: "sign_up" do %>
+                              <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>  Sign up
+                              <% end %>
+                            </li>
+                            <li><%= link_to new_user_session_path, class: "sign_in" do %>
+                              <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span>  Log IN
+                              <% end %>
+                            </li>
                           </ul>
                         </div>
 
