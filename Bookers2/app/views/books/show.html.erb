@@ -24,7 +24,7 @@
 				</table>
 					<% if @book.user == current_user  %>
 			        <p>
-			        	<%= link_to edit_user_path(@user.id), class: "edit_user_#{@user.id}" do %>
+			        	<%= link_to edit_user_path(current_user.id), class: "edit_user_#{current_user.id}" do %>
 			        	<button type="button" class="btn btn-default" aria-label="Center Align"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>編集</button>
 
 			        	<% end %>
